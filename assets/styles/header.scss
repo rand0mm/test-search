@@ -1,0 +1,43 @@
+.header {
+  margin-bottom: $size7;
+  width: 100%;
+
+  &__wrapper {
+    padding: 0 5.25rem;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-column-gap: $size5;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: $size4;
+    padding-bottom: $size4;
+    border-bottom: 1px solid $secondTextColor;
+  }
+
+  &__info {
+    font-size: $size4;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    display: flex;
+    width: 16.7rem;
+    height: $size7;
+    font-size: $size4;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: $textColor;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__user {
+    font-weight: 500;
+    font-size: 16;
+  }
+}

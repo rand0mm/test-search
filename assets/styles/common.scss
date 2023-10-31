@@ -1,0 +1,95 @@
+@import 'mixin.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    @media (max-width: 760px) {
+        font-size: 10px;
+    }
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    min-height: 110vh;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+img,
+svg {
+    width: 100%;
+    @include transition;
+}
+
+path {
+    @include transition;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    margin: 0;
+}
+
+.active {
+    display: block;
+}
+
+.deactivate {
+    display: none;
+}
+
+// паттерн для скрытия
+div .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
