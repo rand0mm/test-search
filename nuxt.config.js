@@ -4,14 +4,14 @@ export default {
   target: 'static',
 
   head: {
-    title: 'vk-vue',
+    title: 'test-search',
     htmlAttrs: {
       lang: 'ru',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'vk-vue' },
+      { hid: 'description', name: 'description', content: 'test-search' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
